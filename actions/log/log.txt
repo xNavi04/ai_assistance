@@ -1,2 +1,1 @@
-2024-10-17 17:28:37  :  pytanie : jak dodaz uzytkownika , odpowiedź : [{'recipient_id': 'default', 'text': 'Aby utworzyć konto lokalne użytkownika, otwórz panel „Administracja” -> „Zarządzanie dostępem” -> „Użytkownicy”. Kliknij przycisk „Dodaj” w prawym dolnym rogu, aby przejść do strony dodawania nowego użytkownika.'}, {'recipient_id': 'default', 'image': '/static/fig34.jpg'}]
-2024-10-17 17:31:13  :  pytanie : co to openeye , odpowiedź : [{'recipient_id': 'default', 'text': 'OpenEye HelpDesk to rozbudowane rozwiązanie wspierające świadczenie usług, integrujące się z systemem OpenEye SCADA. Jest projektowane od 20 lat przez firmę WASKO S.A., i zapewnia optymalizację obsługi zgłoszeń serwisowych oraz zarządzanie usługami zgodnie z umowami SLA.'}]
+

@@ -8,7 +8,6 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - provide_name
   - ask_how_to_turn_on
   - ask_how_to_turn_off
   - ask_how_to_change_power
