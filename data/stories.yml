@@ -1,0 +1,81 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- story: how_to_turn_on_vacuum
+  steps:
+    - intent: ask_how_to_turn_on
+    - action: utter_how_to_turn_on
+- story: how_to_turn_off_vacuum
+  steps:
+    - intent: ask_how_to_turn_off
+    - action: utter_how_to_turn_off
+- story: how_to_change_power
+  steps:
+    - intent: ask_how_to_change_power
+    - action: utter_how_to_change_power
+- story: how_to_clean_filter
+  steps:
+    - intent: ask_how_to_clean_filter
+    - action: utter_how_to_clean_filter
+- story: how_to_empty_bag
+  steps:
+    - intent: ask_how_to_empty_bag
+    - action: utter_how_to_empty_bag
+- story: ask_accessories
+  steps:
+  - intent: ask_accessories
+  - action: utter_ask_accessories
+- story: ask_warranty
+  steps:
+  - intent: ask_warranty
+  - action: utter_ask_warranty
+- story: ask_safety_instructions
+  steps:
+  - intent: ask_safety_instructions
+  - action: utter_ask_safety_instructions
+- story: ask_about_technical_support
+  steps:
+    - intent: ask_about_technical_support
+    - action: utter_ask_about_technical_support
+- story: ask_about_product_name
+  steps:
+    - intent: ask_about_product_name
+    - action: utter_product_name
+- story: ask_about_product_description
+  steps:
+    - intent: ask_about_product_description
+    - action: utter_product_description
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

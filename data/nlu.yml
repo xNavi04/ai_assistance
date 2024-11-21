@@ -1,0 +1,253 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - cześć
+    - hej
+    - witaj
+    - siema
+    - dzień dobry
+    - dobry wieczór
+    - witaj tam
+    - hej tam
+    - zaczynajmy
+    - hej kolego
+    - witajcie
+    - witajcie tam
+    - hejka
+    - dzien dobry
+    - dzień dobry
+- intent: goodbye
+  examples: |
+    - do widzenia
+    - pa
+    - dobranoc
+    - do zobaczenia
+    - żegnaj
+    - miłego dnia
+    - do następnego
+    - do zobaczenia później
+- intent: affirm
+  examples: |
+    - tak
+    - t
+    - oczywiście
+    - zgadza się
+    - to brzmi dobrze
+    - poprawnie
+- intent: deny
+  examples: |
+    - nie
+    - n
+    - nigdy
+    - nie sądzę
+    - nie lubię tego
+    - w żadnym wypadku
+    - nie bardzo
+- intent: mood_great
+  examples: |
+    - doskonale
+    - świetnie
+    - niesamowicie
+    - czuję się jak król
+    - cudownie
+    - czuję się bardzo dobrze
+    - jestem świetny
+    - jestem niesamowity
+    - zamierzam uratować świat
+    - super podekscytowany
+    - bardzo dobrze
+    - tak doskonale
+    - tak dobrze
+    - tak perfekcyjnie
+    - jestem szczęśliwy
+- intent: mood_unhappy
+  examples: |
+    - mój dzień był okropny
+    - jestem smutny
+    - nie czuję się zbyt dobrze
+    - jestem rozczarowany
+    - bardzo smutny
+    - jestem bardzo smutny
+    - smutny
+    - bardzo smutny
+    - niezadowolony
+    - niedobrze
+    - niezbyt dobrze
+    - ekstremalnie smutny
+    - tak bardzo smutny
+    - tak smutny
+    - jest mi źle
+    - źle
+- intent: bot_challenge
+  examples: |
+    - czy jesteś botem?
+    - czy jesteś człowiekiem?
+    - czy rozmawiam z botem?
+    - czy rozmawiam z człowiekiem?
+    - kim jesteś?
+    - co robisz?
+    - jak byłeś zrobiony?
+    - jak powstałeś?
+- intent: ask_how_to_turn_on
+  examples: |
+    - wlaczyc
+    - włączyć
+    - odpalić
+    - odpalic
+    - jak wlaczyc
+    - chce włączyć
+    - jak włączyć odkurzacz
+    - Jak włączyć odkurzacz?
+    - W jaki sposób uruchomić odkurzacz?
+    - Jak włączyć urządzenie?
+    - Gdzie znajduje się przycisk włączania?
+    - Jak uruchomić sprzęt?
+    - Jak uruchomić ten odkurzacz?
+    - Gdzie włączyć odkurzacz?
+    - Jak zacząć odkurzanie?
+    - Jak włączyć ten model?
+    - Jak działa przycisk włączania?
+- intent: ask_how_to_turn_off
+  examples: |
+      - wylaczyc
+      - wyłączyć
+      - Jak wyłączyć odkurzacz?
+      - Jak zatrzymać urządzenie?
+      - Jak wyłączyć sprzęt?
+      - W jaki sposób zakończyć odkurzanie?
+      - Gdzie jest przycisk wyłączania?
+      - Jak wyłącza się ten model?
+      - Jak zatrzymać działanie odkurzacza?
+      - Jak wyłączyć urządzenie po odkurzaniu?
+      - Gdzie nacisnąć, by wyłączyć sprzęt?
+      - Jak wyłączyć ten model odkurzacza?
+- intent: ask_how_to_change_power
+  examples: |
+      - Jak zmienić moc ssania?
+      - Jak zwiększyć moc odkurzacza?
+      - W jaki sposób zmniejszyć moc ssania?
+      - Jak dostosować moc odkurzacza?
+      - Jak ustawić moc ssania?
+      - Gdzie mogę regulować moc ssania?
+      - Jakie są dostępne poziomy mocy?
+      - Jak mogę ustawić moc minimalną?
+      - Jak wybrać średnią moc ssania?
+      - Jak ustawić maksymalną moc ssania?
+      - zmienić
+      - dostosować
+- intent: ask_how_to_clean_filter
+  examples: |
+      - Jak wyczyścić filtr?
+      - Jak usunąć kurz z filtra?
+      - Jak oczyścić filtr HEPA?
+      - Jak często trzeba czyścić filtr?
+      - W jaki sposób wyciągnąć filtr do czyszczenia?
+      - Jak wymienić filtr w odkurzaczu?
+      - Jak wyczyścić filtr silnika?
+      - Jak wyjmować filtr z odkurzacza?
+      - Jak dbać o filtr w urządzeniu?
+      - Czy mogę umyć filtr wodą?
+      - czyścić filtr
+      - usunąć filtr
+      - wymienić filtr
+      - wymienic filtr
+      - czyscic filtr
+- intent: ask_how_to_empty_bag
+  examples: |
+      - Jak wymienić worek?
+      - Jak opróżnić worek na kurz?
+      - Jak sprawdzić, czy worek jest pełny?
+      - Jak wyciągnąć worek?
+      - W jaki sposób zmienić worek na kurz?
+      - Jak często wymieniać worek?
+      - Jakie są instrukcje wymiany worka?
+      - Gdzie jest worek w odkurzaczu?
+      - Jak usunąć kurz z worka?
+      - Jak wymienić pełny worek?
+      - wymienic worek
+      - oproznic worek
+      - wymienić worek
+      - opróżnić worek
+- intent: ask_accessories
+  examples: |
+      - Jakie akcesoria są dołączone do odkurzacza?
+      - Czy odkurzacz ma ssawkę szczelinową?
+      - Jakie dodatkowe szczotki są dostępne?
+      - Czy mogę użyć szczotki do dywanów?
+      - Jak podłączyć ssawkę uniwersalną?
+      - Jakie końcówki są do odkurzacza?
+      - Jak zmienić szczotkę w odkurzaczu?
+      - Jakie akcesoria są kompatybilne z tym modelem?
+      - Jakie są dostępne tryby ssania?
+      - Jak zainstalować nowe akcesoria?
+      - akcesoria
+      - jakie sa akcesoria
+- intent: ask_warranty
+  examples: |
+    - gwarancja
+      - Czy odkurzacz ma gwarancję?
+      - Jak długo trwa gwarancja?
+      - Co obejmuje gwarancja na odkurzacz?
+      - Jakie są warunki gwarancji?
+      - Gdzie mogę zgłosić usterkę na gwarancji?
+      - Jak działa serwis gwarancyjny?
+      - Czy uszkodzenie kabla podlega gwarancji?
+      - Czy mogę przedłużyć gwarancję?
+      - Czy zewnętrzne uszkodzenia objęte są gwarancją?
+      - Czy wymiana worka wchodzi w zakres gwarancji?
+      - czy ma jakas gwarancje
+- intent: ask_safety_instructions
+  examples: |
+      - Jakie są zasady bezpieczeństwa przy używaniu odkurzacza?
+      - Jak bezpiecznie korzystać z odkurzacza?
+      - Czy mogę używać odkurzacza na mokrej powierzchni?
+      - Jakie są środki ostrożności podczas odkurzania?
+      - Czy dzieci mogą używać tego odkurzacza?
+      - Czy odkurzacz może być używany w łazience?
+      - Czy mogę odkurzać ostre przedmioty?
+      - Czy kabel odkurzacza jest bezpieczny?
+      - Jak uniknąć uszkodzenia przewodu zasilającego?
+      - Jakie są ogólne zalecenia dotyczące bezpieczeństwa?
+      - instrukcja bezpieczenstwa
+      - instrukcja bezpieczeńśtwa
+      - zasady bezpieczeństwa
+- intent: ask_about_technical_support
+  examples: |
+      - Gdzie znajdę serwis techniczny dla mojego odkurzacza?
+      - Jak mogę zgłosić usterkę odkurzacza?
+      - Gdzie mogę naprawić mój odkurzacz?
+      - Jak skontaktować się z serwisem technicznym?
+      - Czy mogę naprawić odkurzacz samodzielnie?
+      - Jakie są autoryzowane punkty serwisowe?
+      - Czy mogę zamówić naprawę online?
+      - Co zrobić, jeśli odkurzacz przestanie działać?
+      - Jak mogę skontaktować się z działem obsługi klienta?
+      - Czy naprawy w serwisie są objęte gwarancją?
+      - naprawy odkurzacz
+      - wsparcie naprawy odkurzacza
+- intent: ask_about_product_name
+  examples: |
+    - co to jest
+      - Jak nazywa się ten odkurzacz?
+      - Jakie jest pełne imię tego modelu?
+      - Jaki jest model tego odkurzacza?
+      - Co to za model odkurzacza?
+      - Jak nazywa się odkurzacz Zelmer?
+      - Jaki jest numer modelu odkurzacza?
+      - Jakie jest imię urządzenia?
+      - Powiedz mi nazwę tego odkurzacza
+      - Jak się nazywa to urządzenie?
+      - Co to za odkurzacz?
+- intent: ask_about_product_description
+  examples: |
+      - Opisz mi ten odkurzacz.
+      - Jakie funkcje ma ten odkurzacz?
+      - Co potrafi odkurzacz ZELMER Kuba ZVC334?
+      - Jakie są cechy odkurzacza?
+      - Jakie akcesoria ma ten odkurzacz?
+      - Jakie funkcje oferuje ten model?
+      - Jakie są kluczowe cechy tego odkurzacza?
+      - Jakie ma opcje czyszczenia?
+      - Powiedz mi więcej o tym odkurzaczu
+      - Jak działa ten odkurzacz?

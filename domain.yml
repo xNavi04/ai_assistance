@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - provide_name
+  - ask_how_to_turn_on
+  - ask_how_to_turn_off
+  - ask_how_to_change_power
+  - ask_how_to_clean_filter
+  - ask_how_to_empty_bag
+  - ask_accessories
+  - ask_warranty
+  - ask_safety_instructions
+  - ask_about_product_name
+  - ask_about_product_description
+  - ask_about_technical_support
+
+responses:
+  utter_greet:
+  - text: "Witam!"
+
+  utter_cheer_up:
+  - text: "Nie smuć się ;) Czy mogę Ci jakoś pomóc?"
+
+  utter_did_that_help:
+  - text: "Czy to pomogło?"
+
+  utter_happy:
+  - text: "Cieszę się! W czym mogę pomóc?"
+
+  utter_goodbye:
+  - text: "Do widzenia"
+
+  utter_iamabot:
+  - text: "Jestem botem stworzonym przez xnavi04"
+
+  utter_how_to_turn_on:
+    - custom:
+        blocks:
+          - type: text
+            text: "Aby włączyć odkurzacz, naciśnij przycisk włącz/wyłącz znajdujący się na urządzeniu."
+          - type: image
+            image: "/static/fig15.jpg"
+          - type: text
+            text: "test"
+
+
+
+  utter_how_to_turn_off:
+    - text: "Aby wyłączyć odkurzacz, naciśnij ten sam przycisk włącz/wyłącz."
+
+  utter_how_to_change_power:
+    - text: "Aby zmienić moc ssania, użyj pokrętła regulacji mocy. Do wyboru masz trzy poziomy: MIN, ŚREDNIA, MAKS."
+
+  utter_how_to_clean_filter:
+    - text: "Aby wyczyścić filtr, odłącz urządzenie od prądu, wyjmij filtr i delikatnie oczyść go nad koszem."
+
+  utter_how_to_empty_bag:
+    - text: "Aby wymienić worek, otwórz pokrywę, wyjmij pełny worek i zamontuj nowy."
+
+  utter_ask_accessories:
+    - text: "Do odkurzacza są dołączone: ssawka szczelinowa, rura teleskopowa oraz szczotka uniwersalna 2w1."
+
+  utter_ask_warranty:
+    - text: "Odkurzacz objęty jest gwarancją. W celu zgłoszenia usterki, skontaktuj się z autoryzowanym serwisem."
+
+  utter_ask_safety_instructions:
+    - text: "Zachowaj ostrożność, nie używaj odkurzacza na mokrych powierzchniach i trzymaj go z dala od dzieci."
+
+  utter_ask_about_technical_support:
+    - text: "W razie awarii skontaktuj się z autoryzowanym serwisem technicznym."
+
+  utter_product_name:
+    - text: "Odkurzacz, o którym mówimy, to ZELMER Kuba ZVC334."
+
+  utter_product_description:
+    - text: |
+        Odkurzacz ZELMER Kuba ZVC334 to nowoczesny model wyposażony w:
+        - Trzy poziomy mocy ssania: MIN, ŚREDNIA, MAKS.
+        - Wskaźnik zapełnienia worka.
+        - Filtr HEPA zapewniający czystość powietrza.
+        - Akcesoria takie jak szczotka 2w1 oraz ssawka szczelinowa.
+        - Automatyczne zwijanie przewodu i teleskopową rurę dla łatwego użytkowania.
+        - Urządzenie przeznaczone do użytku domowego, bezpieczne w obsłudze nawet na wysokości do 2000 m n.p.m.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
